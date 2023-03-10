@@ -6,9 +6,9 @@ The document is version controlled and will be updated following agile principle
 
 Example outline for a requirement:
 
-> # B01 - E-SOH to be a flexible pathway to exposing more near real-time observations
+> ## B01 - E-SOH to be a flexible pathway to exposing more near real-time observations
 >
-> ## User story
+> ### User story
 >
 > As a EUMETNET Member,
 >
@@ -16,10 +16,12 @@ Example outline for a requirement:
 >
 > So, I can deliver a consistent solution and reduce development activity.
 >
-> ## Clarification
+> ### Clarification
 >
 > Some clarifying comments...
 >
-> ## Decisions
+> ### Acceptance criteria
+>
+> ### Consequences and decisions
 >
 > Some decisions based on this...

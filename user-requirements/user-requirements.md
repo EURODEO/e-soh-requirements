@@ -12,4 +12,4 @@ So, I can improve the services (including forecasting of fog and convective even
 
 ### Acceptance criteria
 
-
+### Consequences and decisions
