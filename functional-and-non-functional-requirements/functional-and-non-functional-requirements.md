@@ -22,7 +22,7 @@ Then the data producer initially collects the data before making them available 
   1) collect observations from station
   2) quality control/post-process(?)
   3) send to e-soh
-  * it seems that we should support observations from each instument on each station to be sent separately to e-soh.
+  * it seems that we should support observations from each instrument on each station to be sent separately to e-soh.
 
 ### Acceptance criteria
 
