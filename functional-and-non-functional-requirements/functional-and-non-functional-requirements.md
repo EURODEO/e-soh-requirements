@@ -1,5 +1,19 @@
 # Functional and non-functional requirements
 
+## F01 - operational service
+
+As an E-SOH data consumer,
+
+I want E-SOH to be an operational service,
+
+So I can build my operational services based on E-SOH data.
+
+### Clarifications
+
+### Acceptance criteria
+
+### Consequences and decisions
+
 ## F06 - agreed delivery data format and protocol
 
 As the E-SOH system manager,
