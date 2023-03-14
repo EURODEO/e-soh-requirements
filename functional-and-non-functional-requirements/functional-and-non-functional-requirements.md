@@ -84,6 +84,15 @@ I want security to be considered as a high priority and all aspects of the syste
 
 So I can deliver a robust and secure system.
 
+### Changes
+
+In the tender, we have said the following, regarding this:
+
+> For F33 (security), we expect to implement encryption using secure protocols such as, e.g.,
+> HTTPS. Stored observation data will not be encrypted. Identity and Access Management (IAM)
+> will depend on infrastructure implementations of which restrictions may apply, e.g., at EWC.
+
+
 ### Clarification
 
 #### Access control
@@ -111,8 +120,6 @@ Even if we want to only serve freely available data, we may still want to have s
 #### Data encryption
 
 All traffic to and from the system will use encryption. No usage of http, only https. The same applies to ftp - we will only provides sftp.
-
-Data encryption at rest must be supported, as by the requirements.
 
 ### Acceptance criteria
 
