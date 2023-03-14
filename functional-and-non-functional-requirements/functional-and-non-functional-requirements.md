@@ -113,7 +113,7 @@ Access to statistics about the system should not be freely available to anyone. 
 
 In the first version of e-soh, there will be no restricted data, so from that perspective there is no need for authentication or authorization.
 
-If, at a later stage, we will introduce access control here, there seems to be some limitations in FEMDI regarding this: The use of a message queue with set topics implies that anyone will be able to know about the *existence* of restricted data. We can only provide access control on the actual data itself. *This may or may not be acceptable at a later stage.*
+If, at a later stage, we will introduce access control here, there seems to be some limitations in FEMDI regarding this: The use of a message queue with implies that anyone will be able to know about the *existence* of restricted data. We can only provide access control on the actual data itself. *This may or may not be acceptable at a later stage.*
 
 Even if we want to only serve freely available data, we may still want to have some kind of access control here, to have some protection against servers becoming overloaded.
 
