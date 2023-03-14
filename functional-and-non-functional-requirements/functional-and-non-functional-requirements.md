@@ -88,13 +88,13 @@ So I can deliver a robust and secure system.
 
 #### Access control
 
-Broken access control is top top issue in the [OWASP Top 10 list of the most critical security risks facing organizations](https://owasp.org/Top10/A01_2021-Broken_Access_Control/).
+Broken access control is the top top issue in the [OWASP Top 10 list of the most critical security risks facing organizations](https://owasp.org/Top10/A01_2021-Broken_Access_Control/).
 
 It seems there is a need three separate systems for authentication and authorization:
 
 ##### Data ingestion
 
-There must be control of who is allowed to upload data to the system. Also, there may be several systems for uploading data. Sftp may be one of them, while others may depend on http post requests. This means that each system for ingesting data may need its own mechanisms for authentication, and possibly also authorization. If possible, it would be useful to have a common "source of truth" regarding authorization, regardless of authentication mechanism.
+There must be control of who are allowed to upload data to the system. Also, there may be several systems for uploading data. Sftp may be one of them, while others may depend on http post requests. This means that each system for ingesting data may need its own mechanisms for authentication, and possibly also authorization. If possible, it would be useful to have a common "source of truth" regarding authorization, regardless of authentication mechanism.
 
 ##### Monitoring
 
