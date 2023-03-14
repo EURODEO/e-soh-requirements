@@ -1,5 +1,36 @@
 # Functional and non-functional requirements
 
+## F01 - operational service
+
+As an E-SOH data consumer,
+
+I want E-SOH to be an operational service,
+
+So I can build my operational services based on E-SOH data.
+
+### Clarifications
+
+### Acceptance criteria
+
+### Consequences and decisions
+
+## F06 - agreed delivery data format and protocol
+
+As the E-SOH system manager,
+
+I want data producers to make the data they create available in an agreed data format and following an agreed delivery protocol,
+
+So I can deliver the level of service required by my users.
+
+### Clarifications
+
+* Does this refer to E-SOH ingestion service, or E-SOH API?
+  * It's the ingestion. From the ITT: "As well as requirements for the data provider (i.e., E-SOH) to meet, there are also requirements for the data producers (e.g., Members) ... to deliver the overall E-SOH service. "
+
+### Acceptance criteria
+
+### Consequences and decisions
+
 ## F13 - initially collect data before making it available to E-SOH
 
 Given a data producer operates or is responsible for multiple (>1) instruments,
