@@ -10,6 +10,9 @@ So I can build my operational services based on E-SOH data.
 
 ### Clarifications
 
+* What is the meaning of "operational service"?
+  * E-SOH will be a fully operational service, providing core capability on behalf of EUMETNET Members. Requirements F02 to F06 describe the Service levels required. 
+
 ### Acceptance criteria
 
 ### Consequences and decisions
