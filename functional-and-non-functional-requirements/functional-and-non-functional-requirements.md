@@ -79,6 +79,22 @@ Then E-SOH should convert the data values to match those required by E-SOH data 
 
 ### Consequences and decisions
 
+## F24 - access to sub-hourly observations delivered in an Open Standard format (e.g., GeoJSON)
+
+As a data consumer of land surface observations,
+
+I want near real-time access to sub-hourly observations delivered in an Open Standard format (e.g., GeoJSON, CoverageJSON) following agreed and structured naming convention standards (e.g., CF and ACDD),
+
+So, I can minimize the development of new applications and reduce the need to learn domain specific formats.
+
+### Clarifications
+
+* At the time of gathering requirements, GeoJSON was suggested - the consensus is now moving to CoverageJSON
+
+### Acceptance criteria
+
+### Consequences and decisions
+
 ## F29 - query based on location, time, and parameter
 
 As a data consumer using API access,
