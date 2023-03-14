@@ -67,6 +67,25 @@ It is understood that estimating the full operational costs, at the tender stage
 
 ### Consequences and decisions
 
+## B08 - FAIR principles
+
+As a data owner,
+
+I want my data exposed following FAIR principles,
+
+So, I can meet my legal and user requirements.
+
+### Priority: primary
+
+### Clarifications
+
+* Can FAIR, HVD and WIS2 requirements be contradictory?
+  * The requirements are not contradictory, but strict follow-up of the FAIR principles requires at least unique persistent id's on the dataset level (see definition elsewhere). Keeping metadata for indefinite time may be too challenging, since observation datasets are small and only live in E-SOH for 24 hours.
+
+### Acceptance criteria
+
+### Consequences and decisions
+
 ## B12 - minimise the required changes in production systems
 
 As a data producer,

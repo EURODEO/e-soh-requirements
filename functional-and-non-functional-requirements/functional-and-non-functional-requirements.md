@@ -8,6 +8,8 @@ I want E-SOH to be an operational service,
 
 So I can build my operational services based on E-SOH data.
 
+### Priority: primary
+
 ### Clarifications
 
 * What is the meaning of "operational service"?
@@ -25,6 +27,8 @@ I want data producers to make the data they create available in an agreed data f
 
 So I can deliver the level of service required by my users.
 
+### Priority: primary
+
 ### Clarifications
 
 * Does this refer to E-SOH ingestion service, or E-SOH API?
@@ -41,6 +45,8 @@ Given a data producer operates or is responsible for multiple (>1) instruments,
 When those instruments make an observation,
 
 Then the data producer initially collects the data before making them available to E-SOH.
+
+### Priority: primary
 
 ### Clarifications
 
@@ -70,6 +76,8 @@ When those observations data are expressed in units not matching the expected E-
 
 Then E-SOH should convert the data values to match those required by E-SOH data consumers.
 
+### Priority: primary
+
 ### Clarifications
 
 * Do we store the values in the original units, or in the expected E-SOH units?
@@ -87,6 +95,8 @@ I want near real-time access to sub-hourly observations delivered in an Open Sta
 
 So, I can minimize the development of new applications and reduce the need to learn domain specific formats.
 
+### Priority: primary
+
 ### Clarifications
 
 * At the time of gathering requirements, GeoJSON was suggested - the consensus is now moving to CoverageJSON
@@ -102,6 +112,8 @@ As a data consumer using API access,
 I want to query the data based on location, time, and parameter,
 
 So I can access exactly the data I require and minimised the amount of data retrieved and local post processing.
+
+### Priority: primary
 
 ### Clarifications
 
