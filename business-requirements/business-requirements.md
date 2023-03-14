@@ -36,7 +36,7 @@ So, Members can efficiently and consistently develop national capability related
 
 ### Clarifications
 
-The project description says that all software should be open-source.
+* The project description says that all software should be open-source.
 
 ### Acceptance criteria
 
@@ -45,6 +45,27 @@ Software is licensed with an open license, such as MIT, apache 2.0, or GNU GPL v
 ### Consequences and decisions
 
 We will use Apache 2.0 as default.
+
+## B04 - sustainable service
+
+As a EUMETNET Member,
+
+I want E-SOH to be a sustainable service that considers the whole lifecycle of a system from design, development, operations to retirement,
+
+So, I understand the total cost of ownership of the E-SOH service.
+
+### Priority: primary
+
+### Clarifications
+
+It is understood that estimating the full operational costs, at the tender stage, is extremely difficult. Therefore, as well as an initial estimate during the tender phase, there is a requirement for a more accurate estimate to be produced during the initial operational phase (WP3). The fully costed estimate of the operational costs should include, for example, system life-cycling cost and reacting to emerging user needs.
+
+* Is this just sustainable in the meaning of operating cost, not in the meaning of green computing etc?
+  * There is a general requirement for all EUMETNET Programmes to "ensure that the environmental footprint of the Programme is minimised where possible." So, this should be considered also in the meaning of green computing.
+
+### Acceptance criteria
+
+### Consequences and decisions
 
 ## B12 - minimise the required changes in production systems
 

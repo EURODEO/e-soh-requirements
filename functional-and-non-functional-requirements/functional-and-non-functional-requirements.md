@@ -78,3 +78,29 @@ Then E-SOH should convert the data values to match those required by E-SOH data 
 ### Acceptance criteria
 
 ### Consequences and decisions
+
+## F29 - query based on location, time, and parameter
+
+As a data consumer using API access,
+
+I want to query the data based on location, time, and parameter,
+
+So I can access exactly the data I require and minimised the amount of data retrieved and local post processing.
+
+### Clarifications
+
+### Acceptance criteria
+
+### Consequences and decisions
+
+At this stage we expect to use EDR as the standard for the API so we should use the EDR standards for location and time. To start with, we will focus on simple radius and 2D polygon queries, and not worry about trajectories, etc.  There is still the open question about parameters but for location and time hopefully we can state EDR.
+
+If there is a Z axis, it needs to be defined what kind of support is required:
+* Can one query data based on, e.g., pressure levels or height from ground level or sea level?
+* How to use the Z axis when data is, e.g., sea temperature profiles or so?
+
+EDR API needs to support that, and the data storage also has to be such that we can store and query the data efficiently. Maybe the simplest form is to support the Z axis that data happens to have and the user needs to know what it is (e.g., based on metadata) and queries are possible only using that axis. Conversions etc are left to user.
+
+* Should be defined whether the location can be in 3D (not just lat/lon) or not
+  * Decision: height is specified in parameter name and/or discovery metadata. We do not expect to implement vertical layer query in EDR (we will implement 2d bounding box, not 3d, at least as a start).
+
