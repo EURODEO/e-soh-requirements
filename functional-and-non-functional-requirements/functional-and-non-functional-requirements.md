@@ -575,16 +575,15 @@ I want security to be considered as a high priority and all aspects of the syste
 
 So I can deliver a robust and secure system.
 
-### Changes
+### Priority: primary
+
+### Clarifications
 
 In the tender, we have said the following, regarding this:
 
 > For F33 (security), we expect to implement encryption using secure protocols such as, e.g.,
 > HTTPS. Stored observation data will not be encrypted. Identity and Access Management (IAM)
 > will depend on infrastructure implementations of which restrictions may apply, e.g., at EWC.
-
-
-### Clarification
 
 #### Access control
 
