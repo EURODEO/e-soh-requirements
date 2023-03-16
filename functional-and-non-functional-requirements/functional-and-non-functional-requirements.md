@@ -68,6 +68,9 @@ So I can deliver the level of service required by my users.
 
 ### Clarifications
 
+* Depending on who makes the batched file, this is a requirement on the data producer?
+  * Yes, but also on the system throughput - it needs to be fast
+
 ### Acceptance criteria
 
 ### Consequences and decisions
@@ -174,6 +177,9 @@ So I am able to handle all data.
 
 ### Clarifications
 
+* Should E-SOH always return the last known value for an observation?
+  * Yes, all iterations should be accessible (both latest and all - need to be able to query the API for a specific version as well)
+
 ### Acceptance criteria
 
 ### Consequences and decisions
@@ -236,6 +242,10 @@ Then the data producer initially collects the data before making them available 
   3) send to e-soh
   * it seems that we should support observations from each instrument on each station to be sent separately to e-soh.
 
+* What is "instrument", e.g., is mechanical wind direction sensor an instrument and wind speed sensor another one?
+  * It is up to the data producer to define the instrument (but it should be provided in metadata, preferably following a controlled vocabulary)
+  * A clear dataset definition may also be useful in this context
+
 ### Acceptance criteria
 
 ### Consequences and decisions
@@ -289,6 +299,11 @@ So, I can improve the services (including forecasting of fog and convective even
 There is no expectation for E-SOH to provide any data quality control capability. If data are received in a corrupt format, the data should be rejected, and no attempt should be made to recover the data. If, however, "poor" quality observations are provided to E-SOH, then E-SOH will publish the data as received. Where there are quality indicators provided by the data provider, these should be persisted and exposed to E-SOH data consumers.
 
 Future iterations of E-SOH, e.g., incorporating PWS data, will increase the need for EUMETNET, rather than relying on the data producer, to undertake real-time QC. This QC capability, possibly using machine learning techniques, falls outside of the current scope of E-SOH and will therefore need to be built separate too, but incorporate with, E-SOH.
+
+* Will there be unified QC flagging scheme or is the "quality indicators persisted and exposed" also saying that there might be as many as flagging schemes as there are data providers?
+  * There must at least be a common "unknown quality" indicator
+  * At Met Norway a controlled vocabulary is used for discovery metadata about quality control: https://htmlpreview.github.io/?https://github.com/metno/mmd/blob/master/doc/mmd-specification.html#quality-control
+  * Conclusion: we will need some quality indicators
 
 ### Acceptance criteria
 
@@ -395,6 +410,13 @@ Then E-SOH should convert the data values to match those required by E-SOH data 
 
 * Do we store the values in the original units, or in the expected E-SOH units?
   * Expect users to provide values in SI units but if users provide non-SI units, we need to define where to do the conversion.
+* Does WMO already describe which units should be used in BUFR?
+  * Yes. There are a lot of WMO documents, and finding what you want can be difficult, but there are a lot of definitions. For example https://www.nco.ncep.noaa.gov/sib/jeff/bufrtab_tableb.html
+* What is the source of information or the specification to rely on? E.g. if there is some pressure data in mbar, should we convert in into hPa?
+  * We must start by following WMO rules. For example https://www.nco.ncep.noaa.gov/sib/jeff/bufrtab_tableb.html. We definitely need to do this for BUFR encoding
+  * Consequence / Requirement on the data producer: units must be defined using an openly available controlled vocabulary - if not, e-soh must just forward the data. Also, we expect SI units
+  * Implementation of the conversion ability is not first priority
+  * How to handle possible quality reduction caused by the conversion also needs to be considered
 
 ### Acceptance criteria
 
@@ -555,6 +577,9 @@ So I can efficiently maintain and lifecycle the E-SOH service.
 ### Priority: primary
 
 ### Clarifications
+
+* What is the definition of "agreed software quality assurance standards"?
+  * We interpret this as something the e-soh project team needs to agree on
 
 ### Acceptance criteria
 

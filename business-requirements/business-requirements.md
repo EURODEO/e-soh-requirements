@@ -58,6 +58,11 @@ So, I can meet part of my “Observations and Prediction Data” and “Science 
 
 ### Clarifications
 
+* It needs to be clarified what kinds of observations there will be in E-SOH, do we need separate means of exchange for 3rd party data etc. (i.e., data from stations not registered in WIGOS)?
+  * From the reqs (U03, U05, U06, ), it is clear that E-SOH should support distribution of non-WIGOS observations, and it should try to "normalize" those data so they can be consumed in a similar way as the WIGOS observations (e.g., by requiring transformations before sending to e-soh, or by doing the transformation in e-soh). We need to figure out in the design process how to do that, and which types of "other" observations we should support.
+  * We need to define use and discovery metadata that supports interoperability. Some station metadata (following a controlled vocabulary) should be required but we cannot require a WIGOS ID.
+  * Ignore restricted data in the beginning (i.e., data without a standard open license or release statement)
+
 ### Acceptance criteria
 
 ### Consequences and decisions
@@ -261,6 +266,8 @@ so I can replace my old systems for message generation.
 ### Priority: secondary
 
 ### Clarifications
+
+* The shared infrastructure of WIS2.0 will most likely be able to support this
 
 ### Acceptance criteria
 
