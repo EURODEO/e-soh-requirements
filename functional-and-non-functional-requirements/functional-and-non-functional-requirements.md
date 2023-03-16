@@ -31,7 +31,7 @@ So I can deliver the level of service required by my users.
 
 ### Clarifications
 
-There is an expectation for data to be consistently available 24/7, although a minimum of downtime (<1%) is acceptable with no break in service > 24hours. There is also an expectation that to deliver this level of service a “service desk” capability will be required so incidents can be managed.
+* There is an expectation for data to be consistently available 24/7, although a minimum of downtime (<1%) is acceptable with no break in service > 24hours. There is also an expectation that to deliver this level of service a "service desk" capability will be required so incidents can be managed.
 
 ### Acceptance criteria
 
@@ -80,6 +80,9 @@ So I can deliver the level of service required by my users.
 ### Priority: primary
 
 ### Clarifications
+
+* Consequential requirement on E-SOH is to make an "easy-to-use" ingestion interface and high quality user guidance and documentation
+* Ideally, the data producers should be able to reuse their existing capabilities
 
 ### Acceptance criteria
 
