@@ -595,9 +595,9 @@ It seems there is a need three separate systems for authentication and authoriza
 
 There must be control of who are allowed to upload data to the system. Also, there may be several systems for uploading data. Sftp may be one of them, while others may depend on http post requests. This means that each system for ingesting data may need its own mechanisms for authentication, and possibly also authorization. If possible, it would be useful to have a common "source of truth" regarding authorization, regardless of authentication mechanism.
 
-##### Monitoring
+##### Administration and monitoring
 
-Access to statistics about the system should not be freely available to anyone. Some system must be set up to allow relevant users to access this system.
+Access to administration and statistics about the system should not be freely available to anyone. Some system must be set up to allow access to relevant users only.
 
 ##### Data delivery
 
@@ -606,6 +606,10 @@ In the first version of e-soh, there will be no restricted data, so from that pe
 If, at a later stage, we will introduce access control here, there seems to be some limitations in FEMDI regarding this: The use of a message queue implies that anyone will be able to know about the *existence* of restricted data. We can only provide access control on the actual data itself. *This may or may not be acceptable at a later stage.*
 
 Even if we want to only serve freely available data, we may still want to have some kind of access control here, to have some protection against servers becoming overloaded.
+
+#### Security monitoring
+
+Some system must be in place to allow admins to monitor the system with regards to security incidents.
 
 #### Data encryption
 
