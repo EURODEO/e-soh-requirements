@@ -374,6 +374,9 @@ Then the data should be exposed by E-SOH along with an indication that the data 
 
 ### Clarifications
 
+* Should the default be to only return quality data, and an option to get all data + quality indicator)?
+  * The user must choose the level of quality control based on a controlled vocabulary in the discovery metadata. We may want to specify a default for use in the API search.
+
 ### Acceptance criteria
 
 ### Consequences and decisions
@@ -650,6 +653,13 @@ In the case of WIGOS Station IDs (WSI) it will be the responsibility of the data
 ### Priority: primary
 
 ### Clarifications
+
+We need to state some principles before defining the standards:
+
+* A minimum set of (required and recommended) use and discovery metadata must follow the data, i.e., as part of the data files
+* This metadata must follow agreed standards
+* It must be possible to translate from the agreed data-following standards to other standards, such as DCAT and ISO19115 and related profiles of these
+* Based on discussion in https://app.zenhub.com/workspaces/e-soh-63fc8658faa10d2e7d262c3c/issues/zh/40 we only treat open datasets without restrictions in the first stage. This implies that a license is required on all data, and that e-soh only takes in the data if it has an open license or a release statement.
 
 ### Acceptance criteria
 
