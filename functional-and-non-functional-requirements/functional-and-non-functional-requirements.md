@@ -32,6 +32,9 @@ So I can deliver the level of service required by my users.
 ### Clarifications
 
 * There is an expectation for data to be consistently available 24/7, although a minimum of downtime (<1%) is acceptable with no break in service > 24hours. There is also an expectation that to deliver this level of service a "service desk" capability will be required so incidents can be managed.
+* We need to figure out the consequences of any downtime
+* We need to separate between ingestion and data access downtimes
+* Centralized and federated components also need to be viewed individually
 
 ### Acceptance criteria
 
