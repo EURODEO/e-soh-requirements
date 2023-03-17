@@ -12,9 +12,9 @@ pandoc:
 	echo "" >> pandoc.TMP
 	cat dependencies/* >> pandoc.TMP
 	echo "" >> pandoc.TMP
-	cat business-requirements/* >> pandoc.TMP
-	echo "" >> pandoc.TMP
 	cat user-requirements/* >> pandoc.TMP
+	echo "" >> pandoc.TMP
+	cat business-requirements/* >> pandoc.TMP
 	echo "" >> pandoc.TMP
 	cat functional-and-non-functional-requirements/* >> pandoc.TMP
 	echo "" >> pandoc.TMP
