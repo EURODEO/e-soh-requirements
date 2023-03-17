@@ -21,7 +21,7 @@ pandoc:
 	echo "" >> pandoc.TMP
 	cat conclusion/* >> pandoc.TMP
 	echo "" >> pandoc.TMP
-	$(PANDOC) -s --toc -c pandoc.css -f markdown -t html pandoc.TMP > $(HTMLFILE)
+	$(PANDOC) -s --toc --toc-depth=2 -c pandoc.css -f markdown -t html pandoc.TMP > $(HTMLFILE)
 	rm pandoc.TMP
 	$(BROWSER) $(HTMLFILE)
 
