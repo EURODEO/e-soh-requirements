@@ -665,6 +665,28 @@ So I can deliver a resilient and sustainable service to my users.
 
 ### Clarifications
 
+The required compute resource for E-SOH is thought to be relatively low, especially compared with the requirements of NWP, Satellites and even Radar.
+
+The storage requirements are modest given only 24 hours of storage is required.
+
+Consideration also needs to be given to the requirements for resilience and for development environments. Depending on the resilience architecture and the need for development environments there might be several instances of E-SOH running in parallel to the operational system. On the other hand, depending on the service of the Cloud provider chosen, resilience might not need to be running in parallel and development environments may only exist when actively being used rather than being “always on”.
+
+As more observations network are added to E-SOH the resource requirements will increase accordingly. For the observations expected for E-SOH the amount of compute resource is likely to be proportional to the number of observations. As a very rough estimate, based on a traditional observations station with several observed parameters, the following compute resource is required for 5000 stations (i.e., an estimate of the number of observing stations in Europe)...
+
+CPU ~8 CPU Core, Memory ~8GB RAM, Storage ~1TB
+
+The estimate above is for a single instance of E-SOH running.
+
+For other networks the number of parameters per station might be less. E.g., rain-gauges might only record a single meteorological value.
+
+In addition to the resources required for the observations processing chain, additional resources will be required for the input and output to the systems. The number of “PUT” and “GET” request are likely to be significant given the number of  mall messages/files delivered to and disseminated by E-SOH. The Scoping study estimated between 0.25 and 1.7 Billion PUT requests per month.
+
+The ‘periphery’ components of E-SOH (e.g., monitoring and reporting) will also require compute resources, but these are believed to be significantly less than the core of E-SOH.
+
+The estimates above will need to be clarified during the design phase (WP1).
+
+Antoher crucial part is to estimate the load coming from open data requests. FMI open data gets about 20 req/s for observations (latest numbers should be confirmed with FMI). Scaling that up with number of countries would lead to 200-300 req/s and with number of users much more. FEMDI API gateway can hopefully cope with major part of the load, but probably not all. From that point of view, it's also important to check if, e.g., wis2box supports multiple nodes well (scaling).
+
 ### Acceptance criteria
 
 ### Consequences and decisions
