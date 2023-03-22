@@ -98,7 +98,7 @@ So, I can improve the services (including forecasting of fog and convective even
 
 ### Consequences and decisions
 
-## U7 - first iteration and subsequent corrections
+## U07 - first iteration and subsequent corrections
 
 As a meteorologist in the weather forecasting services,
 
