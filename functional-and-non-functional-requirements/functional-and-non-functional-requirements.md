@@ -178,7 +178,7 @@ So I am able to handle all data.
 ### Clarifications
 
 * Should E-SOH always return the last known value for an observation?
-  * Yes, only the latest iteration should be accessible (this will replace the first one)
+  * Yes, only the latest iteration needs to be accessible (this will replace the first one)
 * By late or subsequently corrected observations, we interpret that observations that are corrected within the 24 hours window shall be updated
 * By "access to first iteration (..) as well as (..) corrected observations" we suggest to only keep the latest value in the 24 hours data store
 
