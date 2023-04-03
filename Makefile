@@ -22,7 +22,7 @@ pandoc:
 	echo "" >> pandoc.TMP
 	cat conclusion/conclusion.md >> pandoc.TMP
 	echo "" >> pandoc.TMP
-	$(PANDOC) -s -N -B pandoc-heading.TMP --toc --toc-depth=2 -c pandoc.css -f markdown -t html pandoc.TMP > $(HTMLFILE)
+	$(PANDOC) -s -N -B pandoc-heading.TMP --metadata title="E-SOH requirements document" --toc --toc-depth=2 -c pandoc.css -f markdown -t html pandoc.TMP > $(HTMLFILE)
 	rm pandoc.TMP
 	rm pandoc-heading.TMP
 	#$(BROWSER) $(HTMLFILE)
