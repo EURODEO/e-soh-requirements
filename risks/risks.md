@@ -1,3 +1,0 @@
-# Risks
-
-This section should identify any risks specific to the requirements.
