@@ -1,2 +1,4 @@
-e-soh-requirements-doc.html
-pandoc.TMP
+html/
+pdf/
+.vagrant/
+*.log

@@ -1,0 +1,10 @@
+== Constraints and assumptions
+
+The purpose of this sub-section is to document any limitations or assumptions
+that could impact the development of the system in order to ensure that the
+final product meets the users' needs and expectations. These constraints could
+include factors such as budget or time constraints, technical limitations, or
+any other factors that could affect the functionality or usability of the
+system. By identifying and addressing these constraints and assumptions early
+in the development process, we can minimize the risk of delays,
+misunderstandings, or unsatisfactory outcomes.

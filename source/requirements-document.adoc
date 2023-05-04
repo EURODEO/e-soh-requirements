@@ -1,0 +1,36 @@
+:doctype: book
+:pdf-folio-placement: physical
+:media: prepress
+:sectnums:
+:sectnumlevels: 6
+:sectanchors:
+:toc: macro
+:chapter-label:
+:xrefstyle: short
+:toclevels: 6
+
+include::title-page.adoc[]
+
+:numbered:
+include::introduction.adoc[]
+
+:numbered:
+include::dependencies.adoc[]
+
+:numbered:
+include::constraints-and-assumptions.adoc[]
+
+:numbered:
+include::user-requirements.adoc[]
+
+:numbered:
+include::business-requirements.adoc[]
+
+:numbered:
+include::functional-and-non-functional-requirements.adoc[]
+
+:numbered:
+include::risks.adoc[]
+
+:numbered:
+include::conclusion.adoc[]

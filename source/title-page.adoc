@@ -1,0 +1,29 @@
+= E-SOH Requirements Document
+Stuart J. Matthews, Gijsbert Kruithof, Håvard Futsæter, Jo Asplin, Johannes T. Langvatn, Lasse Latva, Lukas Phaf, Mikko Rauhala, Roope Tervo, Vegard Bønes, Vegar Kristiansen, Morten W. Hansen.
+
+[discrete]
+== Abstract
+
+This is the Requirements Document for the EUMETNET Supplementary Observations
+dataHub (E-SOH). This document outlines the technical requirements and
+objectives for the development of E-SOH, which is a component of the Federated
+European Meteorological Data Infrastructure (FEMDI) program. The objective of
+E-SOH is to provide a sustainable and standardized system for sharing real-time
+meteorological observations in line with the World Meteorological
+Organization's (WMO) Information System 2.0 (WIS 2.0) strategy and the European
+Union's (EU) regulation on Meteorological High Value Data (HVD).
+
+toc::[]
+
+[discrete]
+== Revision history
+
+[cols=",,,",]
+|=======================================================================
+|Version |Date |Comment |Responsible
+
+|1.0 |2023-04-28 |First version |Morten W. Hansen
+
+|=======================================================================
+
+
