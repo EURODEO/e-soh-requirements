@@ -2,6 +2,8 @@
 
 Requirements document for E-SOH. The document lists the requirements given in the project assignments with needed clarifications and the consequential decisions.
 
+See it (https://eurodeo.github.io/e-soh-requirements/)[here].
+
 The document is version controlled and will be updated following agile principles. Especially, the decisions may change throughout the project.
 
 Example outline for a requirement:
